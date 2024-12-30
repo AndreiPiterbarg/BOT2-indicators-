@@ -21,7 +21,3 @@ def atr(data: np.ndarray, period: int = 14, sequential: bool = False) -> Union[f
     # Return either the full sequence or just the last value
     return res if sequential else res[-1]
 
-# Example usage:
-# data = read_data()  # Your structured array
-# atr_value = atr(data, period=14)  # Get single value
-# atr_series = atr(data, period=14, sequential=True)  # Get full series
